@@ -1,0 +1,78 @@
+<md-toolbar>Welcome To Yujaa</md-toolbar>
+<md-card>
+	<md-card-content>
+		<form>	
+			<div>					
+				<md-icon>person</md-icon>
+					<md-input-container>
+						<input type="text" name="firstName" placeholder="First Name">
+					</md-input-container>
+					<div class="pull-right">
+						<md-icon>person</md-icon>
+						<md-input-container>
+							<input type="text" name="lastName" placeholder="Last Name">
+						</md-input-container>
+					</div>				
+			</div>
+			<div>
+				<md-icon>mail</md-icon>
+					<md-input-container>
+						<input type="email" name="email" placeholder="Email ID">
+					</md-input-container>
+					<div class="pull-right">
+						<md-icon>lock</md-icon>
+						<md-input-container>	
+							<input type="password" name="password" placeholder="Password">
+						</md-input-container>
+					</div>
+			</div>
+			<div>
+				<md-icon>place</md-icon>
+				<md-input-container class="mat-form">
+					<input type="text" name="address" placeholder="Address">
+				</md-input-container>
+			</div>
+			<div>
+				<md-icon>location_city</md-icon>
+				<md-input-container>
+					<input type="text" name="city" placeholder="City">
+				</md-input-container>
+				<div class="pull-right">
+					<md-icon>account_balance</md-icon>
+					<md-input-container>
+						<input type="text" name="state" placeholder="State">
+					</md-input-container>
+				</div>
+			</div>
+			<div>
+				<md-icon>map</md-icon>
+				<md-input-container>
+					<input type="text" name="country" placeholder="Country">
+				</md-input-container>
+				<div class="pull-right">
+					<md-icon>pin_drop</md-icon>
+					<md-input-container>
+						<input type="text" name="pincode" placeholder="PIN Code">
+					</md-input-container>
+				</div>
+			</div>
+			<div>
+				<md-icon>call</md-icon>
+				<md-input-container>
+					<input type="text" name="phoneNo" placeholder="Phone no.">
+				</md-input-container>
+				<div class="pull-right">
+					<md-icon>business</md-icon>
+					<md-select placeholder="Industry Vertical">
+						<md-option *ngFor="let industry of industries" [value]="industry.value">
+							{{ industry.viewValue }}
+						</md-option>
+					</md-select>
+				</div>					
+			</div>
+			<div  style="text-align: center;">
+				<md-button class="md-raised md-primary">Signup</md-button>
+			</div>
+		</form>
+	</md-card-content>
+</md-card>
